@@ -1,0 +1,30 @@
+
+
+-------------------------TODO-------------------------
+ 
+ ----------GUNS----------
+ - Make different muzzel flashes for each weapon 
+ - Different impact particles for each weapon 
+ - Animations for idle
+ - Animations for firing 
+ - Animations for changing weapon
+ - Aiming for each gun
+	- Shaking when aiming
+ - 
+
+ -------SNIPER RIFLE------
+ - Impliment scoping
+
+ ----------GAMEPLAY----------
+ - Create movement script
+
+------------------------TO FIX------------------------
+
+
+
+-----------------------COMPLETED----------------------
+
+
+
+----------------------TO REVISIT----------------------
+ - Change the Gun script so that the script does not contain as much as it does
