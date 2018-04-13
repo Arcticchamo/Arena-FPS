@@ -13,6 +13,7 @@ public class WeaponHolder : MonoBehaviour {
         foreach (Transform weapon in transform)
         {
             weapon.gameObject.SetActive(false);
+			weapon.GetComponent<Gun>().GenerateAmmoClip();
             m_weaponList.Add(weapon);
         }
 
@@ -51,6 +52,8 @@ public class WeaponHolder : MonoBehaviour {
         {
             if (m_weaponList[i].gameObject.activeInHierarchy)
             {
+				//If the gun is currently reloading. Stop it.
+				m_weaponList[i].gameObject.GetComponent<Gun>().StopReloading();
                 m_weaponList[i].gameObject.SetActive(false);
                 
                 if (i == m_weaponList.Count - 1)
@@ -73,6 +76,7 @@ public class WeaponHolder : MonoBehaviour {
         {
             if (m_weaponList[i].gameObject.activeInHierarchy)
             {
+				m_weaponList[i].gameObject.GetComponent<Gun>().StopReloading();
                 m_weaponList[i].gameObject.SetActive(false);
 
                 if (i == 0)
